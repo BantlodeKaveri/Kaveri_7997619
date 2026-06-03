@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Exercise 1.1</title>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <!--<div class="container mt-5">
+    <h1 class="text-primary">Welcome to Bootstrap 5</h1>
+    <p class="lead">
+      Bootstrap CDN successfully linked.
+    </p>
+    <button class="btn btn-success">
+      Click Me
+    </button>
+    <button class="btn btn-primary"
+        data-bs-toggle="collapse"
+        data-bs-target="#demo">
+    Show Content
+</button>
+<div class="collapse mt-3" id="demo">
+    Bootstrap JS Working!</div>
+  </div>-->
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="border p-3">Column 1</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="border p-3">Column 2</div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="border p-3">Column 3</div>
+        </div>
+    </div>
+</div>
+<!-- Exercise 4.1 -->
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-md-3">
+      <div class="p-3 border bg-light">Sidebar</div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="p-3 border bg-light">Content</div>
+    </div>
+
+  </div>
+</div>
+<!-- Exercise 4.2 -->
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-sm-3"><div class="p-3 border">Box 1</div></div>
+    <div class="col-sm-3"><div class="p-3 border">Box 2</div></div>
+    <div class="col-sm-3"><div class="p-3 border">Box 3</div></div>
+    <div class="col-sm-3"><div class="p-3 border">Box 4</div></div>
+
+  </div>
+</div>
+<!--<h3>Exercise 5.1</h3>-->
+
+<div class="container mt-4" style="height:200px;">
+  <div class="row justify-content-center align-items-center" style="height:100%;">
+
+    <div class="col-md-6">
+      <div class="p-3 border bg-light text-center">
+        Center Content
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--<h3>Exercise 5.2</h3>-->
+
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-md-9 order-md-2">
+      <div class="p-3 border bg-light">
+        Content Area
+      </div>
+    </div>
+
+    <div class="col-md-3 order-md-1">
+      <div class="p-3 border bg-light">
+        Sidebar
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container mt-4">
+
+  <div class="d-flex flex-column flex-md-row bg-dark text-white p-3">
+
+    <div class="p-2">Home</div>
+    <div class="p-2">About</div>
+    <div class="p-2">Services</div>
+    <div class="p-2">Contact</div>
+
+  </div>
+
+</div>
+<div class="container mt-4">
+
+  <div class="card p-3">
+
+    <div class="d-flex justify-content-between align-items-center">
+
+      <div>
+        <h5 class="mb-0">Product Name</h5>
+        <small>In stock</small>
+      </div>
+
+      <button class="btn btn-primary">Buy Now</button>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="container mt-4">
+
+  <h1 class="display-1">Display 1 Heading</h1>
+
+  <p class="lead">
+    This is a lead paragraph used for important introduction text.
+  </p>
+
+  <p class="text-muted">
+    This is muted text (light gray color).
+  </p>
+
+  <p class="fw-bold">
+    This is bold text using Bootstrap utility.
+  </p>
+
+</div>
+<div class="container mt-4">
+
+  <p class="text-uppercase">
+    bootstrap typography example
+  </p>
+
+  <p class="text-lowercase">
+    BOOTSTRAP TYPOGRAPHY EXAMPLE
+  </p>
+
+  <p class="text-capitalize">
+    bootstrap typography example text
+  </p>
+
+</div>
+<div class="container mt-4">
+
+  <h3>Registration Form</h3>
+
+  <form>
+
+    <!-- Name -->
+    <div class="mb-3">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" placeholder="Enter name">
+    </div>
+
+    <!-- Email -->
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" placeholder="Enter email">
+    </div>
+
+    <!-- Password -->
+    <div class="mb-3">
+      <label class="form-label">Password</label>
+      <input type="password" class="form-control" placeholder="Enter password">
+    </div>
+
+    <!-- Phone (input-group) -->
+    <div class="mb-3">
+      <label class="form-label">Phone</label>
+      <div class="input-group">
+        <span class="input-group-text">+91</span>
+        <input type="text" class="form-control" placeholder="Mobile number">
+      </div>
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">
+        I agree to terms and conditions
+      </label>
+    </div>
+
+    <button class="btn btn-primary">Register</button>
+
+  </form>
+</div>
+<div class="container mt-4">
+
+  <h3>Login Form</h3>
+
+  <form>
+
+    <!-- Email -->
+    <div class="form-floating mb-3">
+      <input type="email" class="form-control" id="email" placeholder="Email">
+      <label for="email">Email address</label>
+    </div>
+
+    <!-- Password -->
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="pass" placeholder="Password">
+      <label for="pass">Password</label>
+    </div>
+
+    <button class="btn btn-success w-100">Login</button>
+
+  </form>
+
+</div>
+<div class="container mt-4">
+
+  <h3>Buttons Example</h3>
+
+  <button class="btn btn-primary">Primary</button>
+  <button class="btn btn-secondary">Secondary</button>
+  <button class="btn btn-success">Success</button>
+  <button class="btn btn-danger">Danger</button>
+
+  <br><br>
+
+  <button class="btn btn-outline-primary">Outline Primary</button>
+  <button class="btn btn-outline-secondary">Outline Secondary</button>
+  <button class="btn btn-outline-success">Outline Success</button>
+
+</div>
+<div class="container mt-4">
+
+  <h3>Button Group</h3>
+
+  <div class="btn-group">
+    <button class="btn btn-primary">Left</button>
+    <button class="btn btn-primary">Middle</button>
+    <button class="btn btn-primary">Right</button>
+  </div>
+
+  <br><br>
+
+  <h3>Toggle Buttons</h3>
+
+  <div class="btn-group" role="group">
+
+    <input type="checkbox" class="btn-check" id="b1">
+    <label class="btn btn-outline-primary" for="b1">Option 1</label>
+
+    <input type="checkbox" class="btn-check" id="b2">
+    <label class="btn btn-outline-primary" for="b2">Option 2</label>
+
+    <input type="checkbox" class="btn-check" id="b3">
+    <label class="btn btn-outline-primary" for="b3">Option 3</label>
+
+  </div>
+
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">MyWebsite</a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      ☰
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <!-- Links -->
+      <ul class="navbar-nav ms-auto me-3">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+      </ul>
+
+      <!-- Search -->
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-light">Search</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</nav>
+<div class="container mt-4">
+
+  <h4>Tabs Navigation</h4>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+  </ul>
+
+  <br>
+
+  <h4>Pills Navigation</h4>
+
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a class="nav-link active" href="#">Dashboard</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Logout</a></li>
+  </ul>
+
+</div>
+<div class="container mt-4">
+
+  <h3>Profile Card</h3>
+
+  <div class="card" style="width: 18rem;">
+
+    <img src="https://via.placeholder.com/300" class="card-img-top" alt="profile">
+
+    <div class="card-body">
+
+      <h5 class="card-title">John</h5>
+
+      <p class="card-text">
+        Web Developer with experience in HTML, CSS and Bootstrap.
+      </p>
+
+      <a href="#" class="btn btn-primary">View Profile</a>
+
+    </div>
+
+  </div>
+
+</div>
+<div class="container mt-4">
+
+  <h3>Media Object</h3>
+
+  <div class="d-flex">
+
+    <!-- Left Image -->
+    <img src="https://via.placeholder.com/100" class="me-3" alt="image">
+
+    <!-- Right Content -->
+    <div>
+      <h5>Media Heading</h5>
+      <p>
+        This is a media object layout where image is aligned to the left
+        and content is on the right side.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+
+  <div class="bg-light m-3 p-2">
+    Section 1 (m-3 + p-2)
+  </div>
+
+  <div class="bg-primary text-white mt-4 py-5 text-center">
+    Section 2 (mt-4 + py-5)
+  </div>
+
+  <div class="bg-success text-white m-3 p-4">
+    Section 3 (m-3 + p-4)
+  </div>
+
+</div>
+<div class="container mt-5">
+
+  <h3 class="text-center mb-4">Pricing Plans</h3>
+
+  <div class="row text-center">
+
+    <!-- Basic -->
+    <div class="col-md-4 mb-4">
+      <div class="border p-4 m-2">
+        <h4>Basic</h4>
+        <p class="text-muted">₹199/month</p>
+        <p>Simple features</p>
+        <button class="btn btn-primary">Choose</button>
+      </div>
+    </div>
+
+    <!-- Standard -->
+    <div class="col-md-4 mb-4">
+      <div class="border p-4 m-2">
+        <h4>Standard</h4>
+        <p class="text-muted">₹399/month</p>
+        <p>Most popular plan</p>
+        <button class="btn btn-success">Choose</button>
+      </div>
+    </div>
+
+    <!-- Premium -->
+    <div class="col-md-4 mb-4">
+      <div class="border p-4 m-2">
+        <h4>Premium</h4>
+        <p class="text-muted">₹699/month</p>
+        <p>All features</p>
+        <button class="btn btn-danger">Choose</button>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="container mt-4">
+
+  <h3 class="mb-4">Dashboard</h3>
+
+  <div class="row text-center">
+
+    <div class="col-md-3 mb-3">
+      <div class="p-4 bg-primary text-white">
+        Users
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <div class="p-4 bg-warning text-dark">
+        Orders
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <div class="p-4 bg-success text-white">
+        Revenue
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <div class="p-4 bg-danger text-white">
+        Errors
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container mt-5">
+
+  <div class="p-5 bg-dark bg-gradient text-white text-center">
+
+    <h2>Welcome to Dashboard</h2>
+    <p>This section uses dark gradient background with white text.</p>
+
+    <button class="btn btn-light">Get Started</button>
+  </div>
+</div>
+<div class="container mt-4">
+  <h3>Display Utilities</h3>
+  <!-- Always hidden on mobile, show on md -->
+  <div class="d-none d-md-block bg-primary text-white p-3 mb-3">
+    Visible only on Tablet and Desktop
+  </div>
+  <!-- Hidden on mobile, flex on large screens -->
+  <div class="d-none d-lg-flex bg-success text-white p-3">
+    Flex layout only on Large screens
+    <div class="ms-3">Item 1</div>
+    <div class="ms-3">Item 2</div>
+  </div>
+</div>
+<div class="container mt-4">
+  <div class="row">
+    <!-- Sidebar -->
+    <div class="col-md-3 d-none d-md-block bg-dark text-white p-3">
+      Sidebar Menu
+    </div>
+    <!-- Content -->
+    <div class="col-md-9 bg-light p-3">
+      Main Content Area
+    </div>
+  </div>
+</div>
+<div class="container mt-4">
+  <h3>Image Styling</h3>
+  <img src="https://via.placeholder.com/150"
+       class="border border-primary border-3 rounded-circle"
+       alt="profile image">
+</div>
+<div class="container mt-4">
+  <h3>Shadow Card</h3>
+  <div class="card shadow-lg rounded-pill p-4">
+    <div class="card-body text-center">
+      <h4 class="card-title">Premium Plan</h4>
+      <p class="card-text">Best features with modern UI design</p>
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+  <!-- Bootstrap JS -->
+ <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

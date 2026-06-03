@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="styles.css">
+    <link
+
+href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+
+rel="stylesheet">
+<meta charset="UTF-8">
+<title>Local Community Event Portal</title>
+<style>
+#welcomeBanner{
+background-color: blue;
+color:white;
+padding:20px;
+}
+body{
+    background-color:lightblue;
+}
+.highlight{
+background-color: yellow;
+font-weight:bold;
+.imageBorder{
+    border:2px solid black;
+    padding:5px;
+}
+.formStyle{
+    border:2px solid black;
+    padding:20px;
+    width:300px;
+    background-color:lightgray;
+}
+.smallImage{
+    width:100px;
+}
+}
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+    <li>
+<a href="#home">Home</a>
+</li>
+<li>
+<a href="#events">Events</a>
+</li>
+<li>
+<a href="#contact">Contact</a>
+</li>
+<li>
+<a href="help.html" target="_blank">
+Help
+</a>
+</li>
+</ul>
+</nav>
+<section id="home">
+<h2 style="color:red;">
+    Home</h2>
+<p>Welcome to community portal</p>
+</section>
+<section id="events">
+<h2>Events</h2>
+<p>Upcoming events</p>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<p>Contact information</p>
+</section>
+<div id="mainHeader">
+<h2>
+Welcome User
+</h2>
+<p>
+Enjoy our
+<span style="color:red; font-weight:bold;">
+Special Offer
+</span>
+today!
+</p>
+</div>
+<p class="highlight">
+Upcoming events available
+</p>
+<section class="news-section">
+
+<h2>Community Bulletin</h2>
+
+<p>
+The local community is organizing many exciting events this month.
+Music festivals, sports meets, food fairs, and cultural programs
+will be conducted for all age groups. Students and families are
+encouraged to participate actively in the events and enjoy the
+community celebrations.
+
+Special workshops and awareness programs will also be arranged
+for skill development and social interaction. The event management
+team welcomes all users to register and participate in the upcoming
+activities and enjoy the programs with friends and family.
+</p>
+
+</section>
+<h2>Community Event Gallery</h2>
+<table border="1">
+<tr>
+<td>
+    <div class="eventCard">
+<img src="event1.jpg"
+alt="Music Event"
+title="Music Event"
+class="imageBorder"
+width="100">
+<p>Music Festival</p>
+</div>
+</td>
+<td>
+     <div class="eventCard">
+<img src="event2.jpg"
+alt="Sports Event"
+title="Sports Event"
+class="imageBorder"
+width="100">
+<p>Sports Meet</p>
+</div>
+</td>
+<td>
+     <div class="eventCard">
+<img src="event3.jpg"
+alt="Food Event"
+title="Food Event"
+class="imageBorder"
+width="100">
+<p>Food Fair</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+     <div class="eventCard">
+<img src="event4.jpg"
+alt="Dance Event"
+title="Dance Event"
+class="imageBorder"
+width="100">
+<p>Dance Show</p>
+</div>
+</td>
+<td>
+     <div class="eventCard">
+<img src="event5.jpg"
+alt="Art Event"
+title="Art Event"
+class="imageBorder"
+width="100">
+<p>Art Exhibition</p>
+</div>
+</td>
+<td>
+     <div class="eventCard">
+<img src="event6.jpg"
+alt="Community Event"
+title="Community Event"
+class="imageBorder"
+width="100">
+<p>Community Gathering</p>
+</div>
+</td>
+</tr>
+</table>
+<h2>
+Event Registration Form
+</h2>
+<form class="formStyle"
+onsubmit="document.getElementById('msg').value='Registration Successful'; return false;">
+Name:
+<input
+type="text"
+placeholder="Enter Name"
+required
+autofocus>
+<br><br>
+Email:
+<input
+type="email"
+placeholder="Enter Email"
+required>
+<br><br>
+Date:
+<input
+type="date"
+required>
+<br><br>
+Event Type:
+<select required>
+<option>
+Music
+</option>
+<option>
+Sports
+</option>
+<option>
+Food
+</option>
+</select>
+<br><br>
+Message:
+<textarea>
+placeholder="Enter message"
+required>
+</textarea>
+<br><br>
+<input
+type="submit"
+value="Register">
+<br><br>
+<output id="msg">
+</output>
+</form>
+<h2>
+Event Feedback
+</h2>
+Phone Number:
+<input
+type="text"
+id="phone"
+placeholder="Enter phone"
+onblur="checkPhone()">
+<p id="phoneMsg">
+</p>
+Event Type:
+<select onchange="showFee(this.value)">
+<option>
+Select Event
+</option>
+<option value="100">
+Music
+</option>
+<option value="200">
+Sports
+</option>
+<option value="150">
+Food
+</option>
+</select>
+<p id="fee">
+</p>
+<button
+onclick="confirmMsg()">
+Submit
+</button>
+<p id="confirm">
+</p>
+<img
+src="event1.jpg"
+width="100"
+ondblclick="this.style.width='200px'">
+<br><br>
+<textarea
+placeholder="Feedback"
+onkeyup="countChar(this)">
+</textarea>
+<p>
+Characters:
+<span id="count">
+0
+</span>
+</p>
+<h2>
+Event Promo Video
+</h2>
+<video
+width="300"
+controls
+oncanplay="videoReady()">
+<source
+src="eventvideo.mp4"
+type="video/mp4">
+</video>
+<p id="videoMsg">
+</p>
+<h2>
+Preferred Event Type
+</h2>
+<select
+id="eventSelect"
+onchange="savePreference()">
+<option>
+Select Event
+</option>
+<option>
+Music
+</option>
+<option>
+Sports
+</option>
+<option>
+Food
+</option>
+</select>
+<br><br>
+<button
+onclick="clearData()">
+Clear Preferences
+</button>
+<h2>
+Find Nearby Events
+</h2>
+<button
+onclick="findLocation()">
+Find Nearby Events
+</button>
+<p id="location">
+</p>
+<footer>
+    Footer section
+</footer>
+<script>
+function checkPhone(){
+
+let p=document.getElementById("phone").value;
+if(p.length!=10)
+document.getElementById("phoneMsg").innerHTML="Invalid phone";
+else
+document.getElementById("phoneMsg").innerHTML="Valid";
+}
+function showFee(fee){
+document.getElementById("fee").innerHTML=
+"Event Fee = "+fee;
+}
+function confirmMsg(){
+document.getElementById("confirm").innerHTML=
+"Submitted Successfully";
+}
+function countChar(x){
+document.getElementById("count").innerHTML=
+x.value.length;
+}
+</script>
+<script>
+function checkPhone(){
+let p=
+document.getElementById("phone").value;
+
+if(p.length==10)
+document.getElementById("phoneMsg")
+.innerHTML="Valid Phone";
+else
+document.getElementById("phoneMsg")
+.innerHTML="Invalid Phone";
+}
+function showFee(fee){
+document.getElementById("fee")
+.innerHTML=
+"Fee = "+fee;
+}
+function confirmMsg(){
+document.getElementById("confirm")
+.innerHTML=
+"Submitted Successfully";
+}
+function countChar(x){
+document.getElementById("count")
+.innerHTML=
+x.value.length;
+}
+</script>
+<script>
+function videoReady(){
+document.getElementById("videoMsg")
+.innerHTML=
+"Video ready to play";
+}
+window.onbeforeunload=function(){
+return
+"Form not completed. Leave page?";
+}
+</script>
+<script>
+function findLocation(){
+navigator.geolocation
+.getCurrentPosition(
+showPosition,
+showError,
+{
+enableHighAccuracy:true,
+timeout:5000,
+maximumAge:0
+}
+);
+}
+function showPosition(position){
+document.getElementById(
+"location"
+)
+.innerHTML=
+"Latitude: "
++ position.coords.latitude
++ "<br>Longitude: "
++ position.coords.longitude;
+}
+function showError(error){
+if(error.code==1)
+document.getElementById(
+"location"
+
+)
+.innerHTML=
+"Permission Denied";
+else if(error.code==3)
+
+document.getElementById(
+
+"location"
+)
+.innerHTML=
+"Request Timed Out";
+else
+document.getElementById(
+
+"location"
+)
+.innerHTML=
+"Location Error";
+}
+</script>
+<script>
+function savePreference(){
+let event=
+document.getElementById("eventSelect")
+.value;
+localStorage.setItem(
+"preferredEvent",
+event
+);
+}
+window.onload=function(){
+let saved=
+localStorage.getItem(
+"preferredEvent"
+);
+if(saved){
+document.getElementById(
+"eventSelect"
+).value=saved;
+}
+}
+function clearData(){
+localStorage.clear();
+sessionStorage.clear();
+alert(
+"Preferences Cleared"
+);
+}
+
+</script>
+<div class="hiddenBox">
+
+    Hidden Example
+    </div>
+
+    <div class="noneBox">
+        Display None Example
+        </div>
+        <select id="categoryFilter">
+    <option value="All">All</option>
+    <option value="Music">Music</option>
+    <option value="Dance">Dance</option>
+    <option value="Food">Food</option>
+</select>
+
+<input type="text" id="searchBox" placeholder="Search Event">
+        <p id="loading">Loading events...</p>
+        <div id ="eventsContainer"></div>
+        <h2>Event Registration Form</h2>
+
+<form id="registrationForm">
+
+    <input type="text" name="userName" placeholder="Enter Name">
+    <br><br>
+
+    <input type="email" name="email" placeholder="Enter Email">
+    <br><br>
+
+    <select name="eventName">
+        <option value="">Select Event</option>
+        <option value="Music Fest">Music Fest</option>
+        <option value="Dance Show">Dance Show</option>
+        <option value="Food Festival">Food Festival</option>
+    </select>
+
+    <br><br>
+
+    <button type="submit" id="register Btn">Register</button>
+
+</form>
+<div id="eventCard">
+    <h3>Music Fest</h3>
+    <p>Seats Available:50</p>
+</div>
+<button id="showBtn">Show Event</button>
+
+<p id="errorMessage"></p>
+<p id="successMessage"></p>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <script src="main.js"></script>
+</body>
+
+</html>

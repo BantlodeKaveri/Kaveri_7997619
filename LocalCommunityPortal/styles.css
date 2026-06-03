@@ -1,0 +1,354 @@
+body{
+    background-color:lightblue;
+    margin:20px;
+}
+h2{
+
+color:green;
+
+font-family:Arial;
+
+}
+body{
+margin:20px;
+}
+#welcomeBanner{
+background-color:blue;
+color:white;
+padding:20px;
+}
+.highlight{
+background-color:yellow;
+}
+.imageBorder{
+border:2px solid black;
+padding:5px;
+}
+.formStyle{
+    border:2px solid black;
+    padding:20px;
+    width:300px;
+    background-color:lightgray;
+}
+./* CTA button styles */
+
+.cta-button{
+
+background-color:#007BFF;
+
+color:white;
+
+}
+
+/* Universal selector */
+
+*{
+
+margin:0;
+
+padding:0;
+
+}
+
+/* Element selector */
+
+h2{
+
+color:green;
+
+font-family:Arial;
+
+}
+
+/* ID selector */
+
+#mainHeader{
+
+background-color:darkblue;
+
+color:white;
+
+padding:20px;
+
+}
+
+/* Class selector */
+
+.eventCard{
+
+border:3px solid black;
+
+padding:20px;
+
+margin:20px;
+outline:2px dashed blue;
+
+background-color:#f2f2f2;
+
+}
+
+/* Grouping selector */
+
+h3,p{
+
+color:purple;
+
+font-size:18px;
+
+}
+/* Body background styles */
+
+body{
+
+background-color:#d9f0ff;
+
+background-image:url("background.jpg");
+
+background-size:cover;
+
+}
+/* Main header gradient */
+
+#mainHeader{
+
+background:
+
+linear-gradient(to right, #003366, #3399ff);
+
+color:white;
+
+padding:20px;
+
+}
+/* Section heading styles */
+
+h2{
+
+color:#006600;
+
+background-color:rgba(255,255,255,0.7);
+
+padding:10px;
+
+}
+/* Event card styles */
+
+.eventCard{
+
+background-color:#f2f2f2;
+
+border:3px solid #000000;
+
+padding:20px;
+
+margin:20px;
+outline:2px dashed blue;
+
+}
+/* Typography styles */
+
+body{
+
+font-family:'Poppins', sans-serif;
+
+}
+/* Main heading styles */
+
+h2{
+
+font-size:30px;
+
+font-style:italic;
+
+font-weight:bold;
+
+text-align:center;
+
+text-transform:uppercase;
+
+letter-spacing:2px;
+
+}
+/* Paragraph styles */
+
+p{
+
+font-size:18px;
+
+line-height:1.8;
+
+text-align:justify;
+
+}
+/* Navigation list styles */
+
+nav ul{
+
+list-style-type:none;
+
+padding:0;
+
+margin:0;
+
+}
+/* Navigation list item styles */
+
+nav ul li{
+
+display:inline-block;
+
+padding:10px;
+
+margin:5px;
+
+}
+/* Link styles */
+
+a:link{
+
+color:blue;
+
+text-decoration:none;
+
+}
+
+/* Hover effect */
+
+a:hover{
+
+color:red;
+
+text-decoration:underline;
+
+}
+
+/* Active link */
+
+a:active{
+
+color:green;
+
+}
+
+/* Visited link */
+
+a:visited{
+
+color:purple;
+
+}
+/* Table styles */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+text-align:center;
+
+}
+/* Table heading styles */
+
+th{
+
+border:2px solid black;
+
+padding:10px;
+
+background-color:#3399ff;
+
+color:white;
+
+}
+/* Table data styles */
+
+td{
+
+border:2px solid black;
+
+padding:10px;
+
+background-color:#f2f2f2;
+
+}
+/* Zebra striping */
+
+tr:nth-child(even){
+
+background-color:#d9f0ff;
+
+}
+input:focus,
+textarea:focus,
+select:focus{
+    outline:3px solid red;
+    background-color:#ffffcc;
+}
+.hiddenBox{
+    visibility:hidden;
+    background-color:lightblue;
+    padding:10px;
+}
+.noneBox{
+    display:none;
+    background-color:lightgreen;
+    padding:10px;
+}
+.news-section{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+}
+
+.news-section h2{
+    column-span: all;
+    text-align: center;
+    color: green;
+    font-style: italic;
+}
+/* Responsive Design */
+
+@media screen and (max-width: 768px){
+
+    body{
+        font-size: 14px;
+    }
+
+    /* Navigation vertically */
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Reduce image size */
+
+    img{
+        width: 80%;
+        height: auto;
+    }
+
+    /* Flexible tables */
+
+    table{
+        width: 100%;
+    }
+
+    /* Event cards full width */
+
+    .eventCard{
+        width: 90%;
+        margin: auto;
+    }
+
+    h1,h2{
+        font-size: 22px;
+    }
+}
